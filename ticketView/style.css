@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(48, 48, 48);
+}
+
+#ticket {
+    position: absolute;
+    border-radius: 10px 10px 0 0;
+    max-width: 1200px;
+
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: hsl(0, 0%, 20%);
+
+    /* background-image: url(./4848-facebook-cover-photo.jpg); */
+    background-image: url(./premium_photo-1668007659236-30c7362ee7bd.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 22px;
+}
+
+#TopTitle {
+    font-size: 16px;
+}
+
+/* #TixBox {
+    filter: drop-shadow(20px 20px 5px #000);
+} */
+
+#TixBox .cutout {
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    width: 95%;
+    max-width: 800px;
+    height: 100vh;
+    max-height: 500px;
+    background-color: white;
+    mask: url(#mask);
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+#QrCode {
+    width: 110px;
+    margin: 10px auto 20px;
+}
+
+.dotted-lineContainer {
+    position: relative;
+}
+
+.dotted-line {
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, #ccc 0%, #ccc 50%, transparent 50%);
+    background-size: 10px 2px;
+    background-repeat: repeat-x;
+    margin: 10px 0;
+}
+
+.TixCount {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 95%);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.TixDetails p {
+    margin: 10px 0;
+}
+
+#Owner {
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#greyFont {
+    color: hsl(0, 0%, 50%);
+}
